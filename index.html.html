@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warner Bros.</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-brand img {
+      width: 80px;
+      margin-right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffcc00; /* Orangish-gold */
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ff4500; /* Dark orange */
+    }
+
+    .form-control {
+      border-color: #ffcc00; /* Orangish-gold */
+      background-color: #000;
+      color: #fff;
+    }
+
+    .btn-outline-light {
+      border-color: #ffcc00; /* Orangish-gold */
+      color: #ffcc00; /* Orangish-gold */
+    }
+
+    .btn-outline-light:hover {
+      background-color: #ffcc00; /* Orangish-gold */
+      color: #000;
+    }
+
+    .promotion-poster img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .featured-content {
+      background-color: #000;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .featured-content h4 {
+      color: #ffcc00; /* Orangish-gold */
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .featured-content p {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .footer-content {
+      background-color: #000;
+      color: #fff;
+      width: 1200px;
+      min-height: 200px;
+      max-height: 400px;
+      margin: 20px auto;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .footer-content h5 {
+      color: #ffcc00; /* Orangish-gold */
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .footer-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-content ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-content ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-content ul li a:hover {
+      color: #ff4500; /* Dark orange */
+    }
+
+    .footer-content .list-inline {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .footer-content .list-inline-item {
+      margin-right: 10px;
+    }
+
+    .footer-content .list-inline-item:last-child {
+      margin-right: 0;
+    }
+
+    .feature-section {
+      padding: 50px 0;
+      background-color: #000;
+    }
+
+    .feature-section h2 {
+      color: #fff;
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .feature-item {
+      margin-bottom: 30px;
+    }
+
+    .feature-item h3 {
+      color: #ffcc00; /* Orangish-gold */
+      font-size: 24px;
+    }
+
+    .feature-item p {
+      color: #ccc;
+    }
+
+    .feature-item .btn {
+      background-color: #ffcc00; /* Orangish-gold */
+      border-color: #ffcc00; /* Orangish-gold */
+      color: #000;
+    }
+
+    .feature-item .btn:hover {
+      background-color: #ffa500; /* Orange */
+      border-color: #ffa500; /* Orange */
+      color: #000;
+    }
+
+    /* Added Styles */
+    .recommendation-carousel {
+      margin-top: 50px;
+    }
+
+    .recommendation-carousel .carousel-item {
+      text-align: center;
+    }
+
+    .recommendation-carousel img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .newsletter-section {
+      background-color: #ff4500; /* Dark orange */
+      padding: 50px 0;
+    }
+
+    .newsletter-section h3 {
+      color: #fff;
+      text-align: center;
+    }
+
+    .newsletter-section form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .newsletter-section input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .newsletter-section input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ffcc00; /* Orangish-gold */
+      color: #000;
+      font-weight: bold;
+    }
+
+    .newsletter-section input[type="submit"]:hover {
+      background-color: #ffa500; /* Orange */
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="warner bros logo.webp" alt="Warner Bros. Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies nav.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tvv.html">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="g&a.html">Games & Apps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="collections.html">Collections</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" action="#" method="get">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Feature Section -->
+    <section class="feature-section">
+      <div class="container">
+        <h2>Recommended for You</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Featured Movie 1 -->
+            <div class="carousel-item active">
+              <img src="harry potter.jpg" class="d-block w-100" alt="Harry Potter">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Harry Potter and the Sorcerer's Stone</h5>
+                <p>Follow the adventures of Harry Potter, a young wizard, and his friends as they uncover the mysteries of Hogwarts School of Witchcraft and Wizardry.</p>
+              </div>
+            </div>
+
+            <!-- Featured TV Show 1 -->
+            <div class="carousel-item">
+              <img src="Big bang theory.webp" class="d-block w-100" alt="The Big Bang Theory">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The Big Bang Theory</h5>
+                <p>Join Leonard, Sheldon, and their friends as they navigate through life, love, and scientific discoveries in this hilarious sitcom.</p>
+              </div>
+            </div>
+
+            <!-- Featured Game or App 1 -->
+            <div class="carousel-item">
+              <img src="mortal.jpg" class="d-block w-100" alt="Mortal Kombat 11">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mortal Kombat 11</h5>
+                <p>Step into the arena and engage in epic battles with iconic characters in this action-packed fighting game.</p>
+              </div>
+            </div>
+
+            <!-- Featured Movie 2 -->
+            <div class="carousel-item">
+              <img src="inception.jpg" class="d-block w-100" alt="Inception">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Inception</h5>
+                <p>Experience mind-bending adventures in this sci-fi thriller directed by Christopher Nolan.</p>
+              </div>
+            </div>
+
+            <!-- Featured TV Show 2 -->
+            <div class="carousel-item">
+              <img src="Friends.avif" class="d-block w-100" alt="Friends">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Friends</h5>
+                <p>Join the beloved group of six friends as they navigate through life and love in New York City.</p>
+              </div>
+            </div>
+
+            <!-- Featured Game or App 2 -->
+            <div class="carousel-item">
+              <img src="Fortnite.jpg" class="d-block w-100" alt="Fortnite">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fortnite</h5>
+                <p>Join the battle royale and build your way to victory in this popular online multiplayer game.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Behind the Scenes Videos -->
+    <section class="feature-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="feature-item">
+              <h3>Behind the Scenes</h3>
+              <p>Explore behind the scenes videos to get an inside look at how your favorite movies and TV shows are made.</p>
+              <a href="behind the scenes.html" class="btn btn-primary">Watch Videos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exclusive Interviews -->
+    <section class="feature-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="feature-item">
+              <h3>Exclusive Interviews</h3>
+              <p>Watch exclusive interviews with actors, directors, and creators to learn more about their experiences.</p>
+              <a href="exclusive interviews.html" class="btn btn-primary">Watch Interviews</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trailers -->
+    <section class="feature-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="feature-item">
+              <h3>Trailers</h3>
+              <p>Check out the latest trailers for upcoming movies and TV shows to get a sneak peek of what's to come.</p>
+              <a href="trailers.html" class="btn btn-primary">Watch Trailers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gameplay Clips -->
+    <section class="feature-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="feature-item">
+              <h3>Gameplay Clips</h3>
+              <p>Watch gameplay clips from popular games to see the action and get tips from pro players.</p>
+              <a href="game clips.html" class="btn btn-primary">Watch Gameplay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collections Section -->
+    <section class="feature-section">
+      <div class="container">
+        <h2>Featured Collections</h2>
+        <div class="row">
+
+          <!-- Featured Collection - Movies -->
+          <div class="col-md-4">
+            <div class="featured-content">
+              <h4>Movies</h4>
+              <p>Welcome to our collection of must-see movies! Whether you're in the mood for action-packed adventures, heartwarming dramas, or laugh-out-loud comedies, we've got you covered. Explore our handpicked selection below and find your next cinematic favorite</p>
+              <a href="movies.html" class="btn btn-primary">Explore Movies</a>
+            </div>
+          </div>
+
+          <!-- Featured Collection - TV Shows -->
+          <div class="col-md-4">
+            <div class="featured-content">
+              <h4>TV Shows</h4>
+              <p>Welcome to our collection of must-watch TV shows! From thrilling dramas to hilarious comedies, we've curated a list of top-rated series that you won't want to miss. Explore our selection below and discover your next binge-worthy obsession</p>
+              <a href="tv.html" class="btn btn-primary">Explore TV Shows</a>
+            </div>
+          </div>
+
+          <!-- Featured Collection - Games & Apps -->
+          <div class="col-md-4">
+            <div class="featured-content">
+              <h4>Games & Apps</h4>
+              <p>Check out our curated collection of awesome games and apps! From addictive mobile games to productivity tools and everything in between, there's something here for everyone. Dive in and discover your new favorites</p>
+              <a href="games and apps.html" class="btn btn-primary">Explore Games & Apps</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Get updates on new releases, exclusive content, and special offers.</p>
+        <form action="subscription.html" method="post">
+          <input type="email" name="email" placeholder="Enter your email">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.facebook.com/warnerbrosent/">Facebook</a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/Warnerbros/">Twitter</a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/warnerbrosentertainment/">Instagram</a></li>
+            <li class="list-inline-item"><a href="h.html">Help</a></li>
+            <li class="list-inline-item"><a href="terms of use.html">Terms of Use</a></li>
+            <li class="list-inline-item"><a href="privacy policy.html">Privacy Policy</a></li>
+          </ul>
+          <p>TM & © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
