@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 18px;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        .card-description {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .card-price {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Warner Bros Shop</h1>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <!-- Product 1 -->
+            <div class="card">
+                <img src="friends the complete series.jpg" alt="Friends: The Complete Series">
+                <div class="card-content">
+                    <h2 class="card-title">Friends: The Complete Series</h2>
+                    <p class="card-description">Relive the classic TV show with all 10 seasons of Friends in one box set.</p>
+                    <span class="card-price">$99.99</span>
+                    <a href="https://www.amazon.com/Friends-Complete-Collection-Jennifer-Aniston/dp/B00L1JSDYO" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="card">
+                <img src="Harry Potter The Complete 8 Film Collection.jpg" alt="Harry Potter: The Complete 8-Film Collection">
+                <div class="card-content">
+                    <h2 class="card-title">Harry Potter: The Complete 8-Film Collection</h2>
+                    <p class="card-description">Experience the magical world of Harry Potter with all 8 movies in one collection.</p>
+                    <span class="card-price">$39.99</span>
+                    <a href="https://www.amazon.com/Harry-Potter-Complete-8-Film-Collection/dp/B005OCFGTO" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="card">
+                <img src="Batman The Animated Series Bluray.jpg" alt="Batman: The Animated Series Blu-ray">
+                <div class="card-content">
+                    <h2 class="card-title">Batman: The Animated Series Blu-ray</h2>
+                    <p class="card-description">Relive the adventures of the Dark Knight with this remastered Blu-ray collection of Batman: The Animated Series.</p>
+                    <span class="card-price">$49.99</span>
+                    <a href="https://www.amazon.com/Batman-Animated-Complete-Blu-ray-Various/dp/B07VMP2D59" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="card">
+                <img src="Game of Thrones The Complete Seasons 1to 8.jpeg" alt="Game of Thrones: The Complete Seasons 1-8">
+                <div class="card-content">
+                    <h2 class="card-title">Game of Thrones: The Complete Seasons 1-8</h2>
+                    <p class="card-description">Enter the world of Westeros with all 8 seasons of Game of Thrones.</p>
+                    <span class="card-price">$129.99</span>
+                    <a href="https://www.amazon.com/Game-Thrones-Season-1-8-Digital/dp/B07BMVK2ZQ" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="card">
+                <img src="wonder woman amazon.jpg" alt="Wonder Woman 1984 Blu-ray">
+                <div class="card-content">
+                    <h2 class="card-title">Wonder Woman 1984 Blu-ray</h2>
+                    <p class="card-description">Watch the epic sequel to Wonder Woman with this Blu-ray edition of Wonder Woman 1984.</p>
+                    <span class="card-price">$29.99</span>
+                    <a href="https://www.amazon.com/Wonder-Woman-1984-Blu-ray-Gal/dp/B08PD4CN77" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="card">
+                <img src="The Big Bang Theory The Complete Series.jpeg" alt="The Big Bang Theory: The Complete Series">
+                <div class="card-content">
+                    <h2 class="card-title">The Big Bang Theory: The Complete Series</h2>
+                    <p class="card-description">Binge-watch all 12 seasons of The Big Bang Theory with this complete series box set.</p>
+                    <span class="card-price">$89.99</span>
+                    <a href="https://www.amazon.com/Big-Bang-Theory-Complete-Blu-ray/dp/B07PZR9X4L" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="card">
+                <img src="The Matrix Trilogy 4K Ultra HD.jpg" alt="The Matrix Trilogy 4K Ultra HD">
+                <div class="card-content">
+                    <h2 class="card-title">The Matrix Trilogy 4K Ultra HD</h2>
+                    <p class="card-description">Experience the groundbreaking action of The Matrix Trilogy in stunning 4K Ultra HD.</p>
+                    <span class="card-price">$69.99</span>
+                    <a href="https://www.amazon.com/Matrix-Trilogy-Blu-ray-Keanu-Reeves/dp/B07L9D1TK3" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="card">
+                <img src="Rick and Morty The Complete Seasons 1 to 4.jpg" alt="Rick and Morty: The Complete Seasons 1-4">
+                <div class="card-content">
+                    <h2 class="card-title">Rick and Morty: The Complete Seasons 1-4</h2>
+                    <p class="card-description">Follow the hilarious adventures of Rick and Morty with this complete box set of seasons 1-4.</p>
+                    <span class="card-price">$59.99</span>
+                    <a href="https://www.amazon.com/Rick-Morty-Seasons-1-4-Blu-ray/dp/B087SLZH3P" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="card">
+                <img src="Friends Central Perk LEGO Set.jpg" alt="Friends: Central Perk LEGO Set">
+                <div class="card-content">
+                    <h2 class="card-title">Friends: Central Perk LEGO Set</h2>
+                    <p class="card-description">Build your own replica of Central Perk with this Friends-themed LEGO set.</p>
+                    <span class="card-price">$49.99</span>
+                    <a href="https://www.lego.com/en-us/product/central-perk-21319" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="card">
+                <img src="lord of rings.jpg" alt="Lord of the Rings: The Motion Picture Trilogy Extended Edition">
+                <div class="card-content">
+                    <h2 class="card-title">Lord of the Rings: The Motion Picture Trilogy Extended Edition</h2>
+                    <p class="card-description">Get the ultimate Lord of the Rings experience with the extended editions of the trilogy.</p>
+                    <span class="card-price">$69.99</span>
+                    <a href="https://www.amazon.com/Lord-Rings-Picture-Trilogy-Extended/dp/B00XQE6OUE" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 11 -->
+            <div class="card">
+                <img src="batman.jpg" alt="Batman: Arkham Collection">
+                <div class="card-content">
+                    <h2 class="card-title">Batman: Arkham Collection</h2>
+                    <p class="card-description">Experience the Batman Arkham series with this collection featuring three critically acclaimed games.</p>
+                    <span class="card-price">$59.99</span>
+                    <a href="https://store.playstation.com/en-us/product/UP1018-CUSA02624_00-BATMANARKHAMTRIL" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="card">
+                <img src="scooby doo.jpg" alt="Scooby-Doo, Where Are You!: The Complete Series">
+                <div class="card-content">
+                    <h2 class="card-title">Scooby-Doo, Where Are You!: The Complete Series</h2>
+                    <p class="card-description">Join Scooby-Doo and the gang in solving mysteries with this complete series box set.</p>
+                    <span class="card-price">$39.99</span>
+                    <a href="https://www.amazon.com/Scooby-Doo-Where-Are-You-Complete/dp/B00E96MSCM" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 13 -->
+            <div class="card">
+                <img src="looney tunes collection.jpg" alt="Looney Tunes Golden Collection Volume 1">
+                <div class="card-content">
+                    <h2 class="card-title">Looney Tunes Golden Collection Volume 1</h2>
+                    <p class="card-description">Enjoy classic Looney Tunes cartoons with this volume 1 collection of golden classics.</p>
+                    <span class="card-price">$29.99</span>
+                    <a href="https://www.amazon.com/Looney-Tunes-Golden-Collection-Vol/dp/B0002WZSUQ" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 14 -->
+            <div class="card">
+                <img src="the lefo movie amazon.jpg" alt="The Lego Movie 2: The Second Part Blu-ray">
+                <div class="card-content">
+                    <h2 class="card-title">The Lego Movie 2: The Second Part Blu-ray</h2>
+                    <p class="card-description">Continue the adventure with Emmet and friends in this fun-filled sequel.</p>
+                    <span class="card-price">$19.99</span>
+                    <a href="https://www.amazon.com/Lego-Movie-Second-Blu-ray/dp/B07MHQ5HQT" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 15 -->
+            <div class="card">
+                <img src="the lord of rings collection.jpg" alt="The Hobbit and The Lord of the Rings Ultimate Collector's Edition Blu-ray">
+                <div class="card-content">
+                    <h2 class="card-title">The Hobbit and The Lord of the Rings Ultimate Collector's Edition Blu-ray</h2>
+                    <p class="card-description">Get the complete Middle Earth experience with this collector's edition set.</p>
+                    <span class="card-price">$249.99</span>
+                    <a href="https://www.amazon.com/Hobbit-Rings-Ultimate-Collectors-Blu-ray/dp/B08F92Z5H4" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 16 -->
+            <div class="card">
+                <img src="the art of jim lee.jpg" alt="DC Comics: The Art of Jim Lee">
+                <div class="card-content">
+                    <h2 class="card-title">DC Comics: The Art of Jim Lee</h2>
+                    <p class="card-description">Explore the stunning art of comic book legend Jim Lee in this comprehensive collection.</p>
+                    <span class="card-price">$49.99</span>
+                    <a href="https://www.amazon.com/DC-Comics-Art-Jim-Lee/dp/1683831570" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 17 -->
+            <div class="card">
+                <img src="mortal kombat 11 playstation.jpg" alt="Mortal Kombat 11 Ultimate Edition">
+                <div class="card-content">
+                    <h2 class="card-title">Mortal Kombat 11 Ultimate Edition</h2>
+                    <p class="card-description">Experience the bone-crushing action of Mortal Kombat 11 with all DLC included.</p>
+                    <span class="card-price">$59.99</span>
+                    <a href="https://store.playstation.com/en-us/product/UP1018-PPSA01884_00-MKULTIMATEEDITION" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 18 -->
+            <div class="card">
+                <img src="batman.jpg" alt="The LEGO Batman Movie Blu-ray">
+                <div class="card-content">
+                    <h2 class="card-title">The LEGO Batman Movie Blu-ray</h2>
+                    <p class="card-description">Join Batman and friends in this hilarious animated adventure in LEGO form.</p>
+                    <span class="card-price">$14.99</span>
+                    <a href="https://www.amazon.com/LEGO-Batman-Movie-Blu-ray-Digital/dp/B01N5W6H2Y" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 19 -->
+            <div class="card">
+                <img src="wonder woman amazon.jpg" alt="Wonder Woman: The Complete Collection">
+                <div class="card-content">
+                    <h2 class="card-title">Wonder Woman: The Complete Collection</h2>
+                    <p class="card-description">Experience the adventures of Wonder Woman with this complete collection of the classic TV series.</p>
+                    <span class="card-price">$79.99</span>
+                    <a href="https://www.amazon.com/Wonder-Woman-Complete-Lynda-Carter/dp/B07ZWP2QKJ" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 20 -->
+            <div class="card">
+                <img src="harry poter shop.jpg" alt="Harry Potter Wizarding World: The Ultimate Collection Blu-ray">
+                <div class="card-content">
+                    <h2 class="card-title">Harry Potter Wizarding World: The Ultimate Collection Blu-ray</h2>
+                    <p class="card-description">Dive into the magical world of Harry Potter with this ultimate collection of all 8 movies plus Fantastic Beasts.</p>
+                    <span class="card-price">$129.99</span>
+                    <a href="https://www.amazon.com/Wizarding-World-Complete-Collection-Blu-ray/dp/B08H1QK2JC" class="button">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

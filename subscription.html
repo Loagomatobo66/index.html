@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros Newsletter Subscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Subscribe to Warner Bros Newsletter</h1>
+        <p>Stay up to date with the latest news, releases, and promotions!</p>
+        <form id="subscriptionForm" action="#" method="post">
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+            <input type="submit" value="Subscribe">
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        document.getElementById("subscriptionForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var email = document.getElementById("email").value;
+
+            // Send email to backend for subscription handling
+            // For demonstration purposes, we'll just show a message here
+
+            var message = document.getElementById("message");
+            message.innerHTML = "Thank you for subscribing!";
+        });
+    </script>
+</body>
+</html>
+
