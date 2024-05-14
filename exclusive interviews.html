@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warner Bros.</title>
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-brand img {
+      width: 80px;
+      margin-right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffcc00; /* Orangish-gold */
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ff4500; /* Dark orange */
+    }
+
+    .form-control {
+      border-color: #ffcc00; /* Orangish-gold */
+      background-color: #000;
+      color: #fff;
+    }
+
+    .btn-outline-light {
+      border-color: #ffcc00; /* Orangish-gold */
+      color: #ffcc00; /* Orangish-gold */
+    }
+
+    .btn-outline-light:hover {
+      background-color: #ffcc00; /* Orangish-gold */
+      color: #000;
+    }
+
+    .promotion-poster img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .featured-content {
+      background-color: #000;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .featured-content h4 {
+      color: #ffcc00; /* Orangish-gold */
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .featured-content p {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .footer-content {
+      background-color: #000;
+      color: #fff;
+      width: 1200px;
+      min-height: 200px;
+      max-height: 400px;
+      margin: 20px auto;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .footer-content h5 {
+      color: #ffcc00; /* Orangish-gold */
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .footer-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-content ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-content ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-content ul li a:hover {
+      color: #ff4500; /* Dark orange */
+    }
+
+    .footer-content .list-inline {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .footer-content .list-inline-item {
+      margin-right: 10px;
+    }
+
+    .footer-content .list-inline-item:last-child {
+      margin-right: 0;
+    }
+
+    .feature-section {
+      padding: 50px 0;
+      background-color: #000;
+    }
+
+    .feature-section h2 {
+      color: #fff;
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .feature-item {
+      margin-bottom: 30px;
+    }
+
+    .feature-item h3 {
+      color: #ffcc00; /* Orangish-gold */
+      font-size: 24px;
+    }
+
+    .feature-item p {
+      color: #ccc;
+    }
+
+    .feature-item .btn {
+      background-color: #ffcc00; /* Orangish-gold */
+      border-color: #ffcc00; /* Orangish-gold */
+      color: #000;
+    }
+
+    .feature-item .btn:hover {
+      background-color: #ffa500; /* Orange */
+      border-color: #ffa500; /* Orange */
+      color: #000;
+    }
+
+    /* Added Styles */
+    .recommendation-carousel {
+      margin-top: 50px;
+    }
+
+    .recommendation-carousel .carousel-item {
+      text-align: center;
+    }
+
+    .recommendation-carousel img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .forum-section {
+      background-color: #1c1c1c; /* Dark gray */
+      padding: 50px 0;
+    }
+
+    .forum-section h3 {
+      color: #ffcc00; /* Orangish-gold */
+      text-align: center;
+    }
+
+    .forum-section p {
+      color: #ccc;
+      text-align: center;
+    }
+
+    .newsletter-section {
+      background-color: #ff4500; /* Dark orange */
+      padding: 50px 0;
+    }
+
+    .newsletter-section h3 {
+      color: #fff;
+      text-align: center;
+    }
+
+    .newsletter-section form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .newsletter-section input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .newsletter-section input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ffcc00; /* Orangish-gold */
+      color: #000;
+      font-weight: bold;
+    }
+
+    .newsletter-section input[type="submit"]:hover {
+      background-color: #ffa500; /* Orange */
+      color: #000;
+    }
+
+    /* Exclusive Interviews Section */
+    .exclusive-video {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .exclusive-video h4 {
+      color: #ffcc00; /* Orangish-gold */
+      font-size: 20px;
+    }
+
+    .exclusive-video p {
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    .exclusive-video .btn {
+      background-color: #ffcc00; /* Orangish-gold */
+      border-color: #ffcc00; /* Orangish-gold */
+      color: #000;
+    }
+
+    .exclusive-video .btn:hover {
+      background-color: #ffa500; /* Orange */
+      border-color: #ffa500; /* Orange */
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="warner bros.WEBP" alt="Warner Bros. Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Exclusive Interviews -->
+    <section class="feature-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="feature-item">
+              <h3>Exclusive Interviews</h3>
+              <p>Watch exclusive interviews with actors, directors, and creators to learn more about their experiences.</p>
+              <!-- Video 1: Tom Hanks Reflects on His Career -->
+              <div class="exclusive-video">
+                <h4>Tom Hanks Reflects on His Career</h4>
+                <p>Join Tom Hanks as he shares insights into his iconic roles, memorable moments, and what drives his passion for acting.</p>
+                <a href="https://www.youtube.com/watch?v=DW9bEFOFTOA" class="btn btn-primary">Watch Interview</a>
+              </div>
+              <!-- Video 2: Meryl Streep Talks About Character Transformation -->
+              <div class="exclusive-video">
+                <h4>Meryl Streep Talks About Character Transformation</h4>
+                <p>Dive deep into Meryl Streep's approach to character development and her thoughts on the art of acting.</p>
+                <a href="https://www.youtube.com/watch?v=1Bfk9FMyhkI" class="btn btn-primary">Watch Interview</a>
+              </div>
+              <!-- Video 3: Christopher Nolan Discusses Filmmaking Techniques -->
+              <div class="exclusive-video">
+                <h4>Christopher Nolan Discusses Filmmaking Techniques</h4>
+                <p>Explore the mind of renowned filmmaker Christopher Nolan as he discusses his unique filmmaking style and the creative process behind his movies.</p>
+                <a href="https://www.youtube.com/watch?v=0CaDZamA2ok" class="btn btn-primary">Watch Interview</a>
+              </div>
+              <!-- Video 4: Scarlett Johansson on Black Widow's Evolution -->
+              <div class="exclusive-video">
+                <h4>Scarlett Johansson on Black Widow's Evolution</h4>
+                <p>Scarlett Johansson shares her thoughts on the development of her character Black Widow in the Marvel Cinematic Universe.</p>
+                <a href="https://www.youtube.com/watch?v=MjVcjP3uZmY" class="btn btn-primary">Watch Interview</a>
+              </div>
+              <!-- Video 5: Quentin Tarantino Talks About Genre-Bending Films -->
+              <div class="exclusive-video">
+                <h4>Quentin Tarantino Talks About Genre-Bending Films</h4>
+                <p>Quentin Tarantino delves into his love for genre-bending films, his inspirations, and the making of his most iconic movies.</p>
+                <a href="https://www.youtube.com/watch?v=KYM_ZRjPD-A" class="btn btn-primary">Watch Interview</a>
+              </div>
+              <!-- Video 6: Emma Watson on Her Journey from Hermione to Belle -->
+              <div class="exclusive-video">
+                <h4>Emma Watson on Her Journey from Hermione to Belle</h4>
+                <p>Emma Watson discusses her transition from playing Hermione Granger in Harry Potter to portraying Belle in Beauty and the Beast.</p>
+                <a href="https://www.youtube.com/watch?v=jd5uPgna7Qc" class="btn btn-primary">Watch Interview</a>
+              </div>
+              <!-- Video 7: Martin Scorsese's Insights on Storytelling -->
+              <div class="exclusive-video">
+                <h4>Martin Scorsese's Insights on Storytelling</h4>
+                <p>Martin Scorsese shares his insights on storytelling, the importance of narrative, and his experience as a director.</p>
+                <a href="https://www.youtube.com/watch?v=bYEbyNjvHW4" class="btn btn-primary">Watch Interview</a>
+              </div>
+              <!-- Video 8: Gal Gadot on Being Wonder Woman -->
+              <div class="exclusive-video">
+                <h4>Gal Gadot on Being Wonder Woman</h4>
+                <p>Gal Gadot talks about her experience portraying Wonder Woman, the impact of the character, and the empowerment of women in film.</p>
+                <a href="https://www.youtube.com/watch?v=x0gfYnIA1u0" class="btn btn-primary">Watch Interview</a>
+              </div>
+              <!-- Video 9: Steven Spielberg Reflects on his Most Memorable Films -->
+              <div class="exclusive-video">
+                <h4>Steven Spielberg Reflects on his Most Memorable Films</h4>
+                <p>Steven Spielberg reflects on some of his most memorable films, the stories behind their creation, and the impact they've had on audiences.</p>
+                <a href="https://www.youtube.com/watch?v=DKOjbO9-vcc" class="btn btn-primary">Watch Interview</a>
+              </div>
+              <!-- Video 10: Jennifer Lawrence on the Challenges of Playing Katniss -->
+              <div class="exclusive-video">
+                <h4>Jennifer Lawrence on the Challenges of Playing Katniss</h4>
+                <p>Jennifer Lawrence discusses the challenges she faced portraying Katniss Everdeen in The Hunger Games series and the importance of strong female characters.</p>
+                <a href="https://www.youtube.com/watch?v=Rf1elCTiCTg" class="btn btn-primary">Watch Interview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JavaScript and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
